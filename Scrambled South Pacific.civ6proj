@@ -17,7 +17,7 @@
     <AssemblyName>Scrambled South Pacific</AssemblyName>
     <RootNamespace>Scrambled South Pacific</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="UpdateConfig"><File>XML/Config.xml</File></UpdateDatabase><UpdateText id="UpdateText"><File>XML/SouthPacific_Text.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMap"><File>Maps/SouthPacific.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMaps"><File>Maps/SouthPacific.lua</File><File>Maps/SouthPacific_XP2.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
     <ActionCriteriaData><![CDATA[<ActionCriteria />]]></ActionCriteriaData>
     <AssociationData><![CDATA[<Associations>
   <Reference type="Mod" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
@@ -34,6 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Maps\SouthPacific.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Maps\SouthPacific_XP2.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="XML\Config.xml">
