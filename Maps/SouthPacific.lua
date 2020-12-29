@@ -16,8 +16,8 @@ include "NaturalWonderGenerator"
 include "ResourceGenerator"
 include "AssignStartingPlots"
 
-g_FEATURE_GIANTS_CAUSEWAY					= GetGameInfoIndex("Features", "FEATURE_GIANTS_CAUSEWAY");
-g_FEATURE_EYJAFJALLAJOKULL					= GetGameInfoIndex("Features", "FEATURE_EYJAFJALLAJOKULL");
+--g_FEATURE_GIANTS_CAUSEWAY					= GetGameInfoIndex("Features", "FEATURE_GIANTS_CAUSEWAY");
+--g_FEATURE_EYJAFJALLAJOKULL					= GetGameInfoIndex("Features", "FEATURE_EYJAFJALLAJOKULL");
 
 local g_iW, g_iH;
 local g_iFlags = {};
@@ -359,6 +359,9 @@ function GenerateMap()
 	local biggest_area = Areas.FindBiggestArea(false);
 	print("After Adding Hills: ", biggest_area:GetPlotCount());
 
+	-- Place lakes before rivers so they may act as river sources
+	AddLakes();
+
 	-- River generation is affected by plot types, originating from highlands and preferring to traverse lowlands.
 	AddRivers();
 
@@ -369,7 +372,7 @@ function GenerateMap()
 	
 	local args = {
 		numberToPlace = GameInfo.Maps[Map.GetMapSize()].NumNaturalWonders,
-		Invalid = {g_FEATURE_CRATER_LAKE, g_FEATURE_DEAD_SEA, g_FEATURE_PIOPIOTAHI, g_FEATURE_YOSEMITE, g_FEATURE_GIANTS_CAUSEWAY, g_FEATURE_EYJAFJALLAJOKULL},
+		--Invalid = {g_FEATURE_CRATER_LAKE, g_FEATURE_DEAD_SEA, g_FEATURE_PIOPIOTAHI, g_FEATURE_YOSEMITE, g_FEATURE_GIANTS_CAUSEWAY, g_FEATURE_EYJAFJALLAJOKULL},
 	};
 
 	local nwGen = NaturalWonderGenerator.Create(args);
