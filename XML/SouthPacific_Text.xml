@@ -7,7 +7,7 @@
 
 		<!-- Texts for Maps -->
 		<Row Tag="LOC_SOUTH_PACIFIC_MAP_NAME">
-			<Text>Scrambled South Pacific[COLOR_RED]Unsupported[ENDCOLOR]</Text>
+			<Text>[COLOR_RED]Scrambled South Pacific[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="LOC_SOUTH_PACIFIC_MAP_DESCRIPTION">
 			<Text>An internally randomized map of the South Pacific. (199x120)[NEWLINE][ICON_Exclamation][COLOR_RED]UNSTABLE in late game[ENDCOLOR]</Text>
