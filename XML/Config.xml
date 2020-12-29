@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Config -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 2/18/2018 12:58:25 PM -->
+<GameInfo>
+	<Maps>
+		<!-- for base game -->
+		<Row Domain="StandardMaps" File="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" Name="LOC_SOUTH_PACIFIC_MAP_NAME" Description="LOC_SOUTH_PACIFIC_MAP_DESCRIPTION"/>
+	</Maps>
+
+	<!-- advanced settings -->
+	<Parameters>
+		<Row Key1="Map" Key2="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" ParameterId="WorldAge" Name="LOC_MAP_WORLD_AGE_NAME" Description="LOC_MAP_WORLD_AGE_DESCRIPTION" Domain="WorldAge" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="world_age" GroupId="MapOptions" Hash="0" SortIndex="230"/>
+		<Row Key1="Map" Key2="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="rainfall" GroupId="MapOptions" Hash="0" SortIndex="250"/>
+	</Parameters>
+</GameInfo>

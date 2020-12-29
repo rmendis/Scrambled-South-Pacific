@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SouthPacific_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 2/18/2018 12:59:36 PM -->
+<GameData>
+	<FrontEndText>
+
+		<!-- Texts for Maps -->
+		<Row Tag="LOC_SOUTH_PACIFIC_MAP_NAME">
+			<Text>Scrambled South Pacific</Text>
+		</Row>
+		<Row Tag="LOC_SOUTH_PACIFIC_MAP_DESCRIPTION">
+			<Text>An internally randomized map of the South Pacific.</Text>
+		</Row>
+	</FrontEndText>
+</GameData>

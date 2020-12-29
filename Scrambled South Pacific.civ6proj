@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Scrambled South Pacific</Name>
+    <Guid>25e3ec95-ac88-4b9d-a9ab-63aac21a0f67</Guid>
+    <ProjectGuid>a97554ec-e27d-4520-82f1-58c7d61f8abb</ProjectGuid>
+    <ModVersion>5</ModVersion>
+    <Teaser>An internally randomized map of the South Pacific Ocean.</Teaser>
+    <Description>An internally randomized map of the South Pacific Ocean incl. an extended Great Barrier Reef.</Description>
+    <Authors>blkbutterfly74</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>Scrambled South Pacific</AssemblyName>
+    <RootNamespace>Scrambled South Pacific</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="UpdateConfig"><File>XML/Config.xml</File></UpdateDatabase><UpdateText id="UpdateText"><File>XML/SouthPacific_Text.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMap"><File>Maps/SouthPacific.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria />]]></ActionCriteriaData>
+    <AssociationData><![CDATA[<Associations>
+  <Reference type="Mod" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+  <Reference type="Mod" title="Extended Great Barrier Reef" id="0d4f955c-7d7a-472c-9436-750d19339852" />
+</Associations>]]></AssociationData>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Maps" />
+    <Folder Include="XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\SouthPacific.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XML\Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XML\SouthPacific_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
