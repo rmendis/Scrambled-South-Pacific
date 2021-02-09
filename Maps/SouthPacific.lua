@@ -410,7 +410,7 @@ end
 -- Input a Hash; Export width, height, and wrapX
 function GetMapInitData(MapSize)
 	local Width = 199;
-	local Height = 120;
+	local Height = 100;		-- was 120
 	local WrapX = false;
 	return {Width = Width, Height = Height, WrapX = WrapX,}
 end

@@ -10,7 +10,7 @@
 			<Text>[COLOR_RED]Scrambled South Pacific[ENDCOLOR]</Text>
 		</Row>
 		<Row Tag="LOC_SOUTH_PACIFIC_MAP_DESCRIPTION">
-			<Text>An internally randomized map of the South Pacific. (199x120)[NEWLINE][ICON_Exclamation][COLOR_RED]UNSTABLE in late game[ENDCOLOR]</Text>
+			<Text>An internally randomized map of the South Pacific. (199x100)[NEWLINE][ICON_Exclamation][COLOR_RED]UNSTABLE in late game[ENDCOLOR]</Text>
 		</Row>
 	</FrontEndText>
 </GameData>
