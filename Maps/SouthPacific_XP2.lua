@@ -412,7 +412,7 @@ function GenerateMap()
 	print("Creating start plot database.");
 	-- START_MIN_Y and START_MAX_Y is the percent of the map ignored for major civs' starting positions.
 	local args = {
-		MIN_MAJOR_CIV_FERTILITY = 50,
+		MIN_MAJOR_CIV_FERTILITY = 10,
 		MIN_MINOR_CIV_FERTILITY = 5, 
 		MIN_BARBARIAN_FERTILITY = 1,
 		START_MIN_Y = 15,
@@ -427,8 +427,8 @@ end
 
 -- Input a Hash; Export width, height, and wrapX
 function GetMapInitData(MapSize)
-	local Width = 199;
-	local Height = 100;		-- was 120
+	local Width = 128;		-- was 199
+	local Height = 80;		-- was 120
 	local WrapX = false;
 	return {Width = Width, Height = Height, WrapX = WrapX,}
 end
