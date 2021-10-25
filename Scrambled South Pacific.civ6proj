@@ -5,7 +5,7 @@
     <Name>Scrambled South Pacific</Name>
     <Guid>25e3ec95-ac88-4b9d-a9ab-63aac21a0f67</Guid>
     <ProjectGuid>a97554ec-e27d-4520-82f1-58c7d61f8abb</ProjectGuid>
-    <ModVersion>7</ModVersion>
+    <ModVersion>8</ModVersion>
     <Teaser>An internally randomized map of the South Pacific Ocean.</Teaser>
     <Description>An internally randomized map of the South Pacific Ocean incl. support for an extended Great Barrier Reef (mod).</Description>
     <Authors>blkbutterfly74</Authors>
