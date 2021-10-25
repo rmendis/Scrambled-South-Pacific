@@ -16,9 +16,6 @@ include "NaturalWonderGenerator"
 include "ResourceGenerator"
 include "AssignStartingPlots"
 
---g_FEATURE_GIANTS_CAUSEWAY					= GetGameInfoIndex("Features", "FEATURE_GIANTS_CAUSEWAY");
---g_FEATURE_EYJAFJALLAJOKULL					= GetGameInfoIndex("Features", "FEATURE_EYJAFJALLAJOKULL");
-
 local g_iW, g_iH;
 local g_iFlags = {};
 local g_continentsFrac = nil;
@@ -344,7 +341,7 @@ function GenerateMap()
 	local temperature = 0;
 	
 	plotTypes = GeneratePlotTypes();
-	terrainTypes = GenerateTerrainTypesSouthPacific(plotTypes, g_iW, g_iH, g_iFlags, true);
+	terrainTypes = GenerateTerrainTypesSouthPacific(plotTypes, g_iW, g_iH, g_iFlags, false);
 
 	for i = 0, (g_iW * g_iH) - 1, 1 do
 		pPlot = Map.GetPlotByIndex(i);
@@ -372,7 +369,6 @@ function GenerateMap()
 	
 	local args = {
 		numberToPlace = GameInfo.Maps[Map.GetMapSize()].NumNaturalWonders,
-		--Invalid = {g_FEATURE_CRATER_LAKE, g_FEATURE_DEAD_SEA, g_FEATURE_PIOPIOTAHI, g_FEATURE_YOSEMITE, g_FEATURE_GIANTS_CAUSEWAY, g_FEATURE_EYJAFJALLAJOKULL},
 	};
 
 	local nwGen = NaturalWonderGenerator.Create(args);
