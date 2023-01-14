@@ -7,12 +7,7 @@
     <ProjectGuid>a97554ec-e27d-4520-82f1-58c7d61f8abb</ProjectGuid>
     <ModVersion>10</ModVersion>
     <Teaser>An internally randomized map of the South Pacific Ocean.</Teaser>
-    <Description>An internally randomized map of the South Pacific Ocean incl. support for an extended Great Barrier Reef (mod).
-
-Two sizes: 
-128x80 (Huge)
-[COLOR_RED]128x95 (Massive) ALPHA[ENDCOLOR]
-[COLOR_YELLOW]This unsupported map size is still developmental. 2 out of 3 map seeds will fail. Restart if so.[ENDCOLOR]</Description>
+    <Description>An internally randomized map of the South Pacific Ocean.[NEWLINE]Two sizes: 128x80 (Huge)[NEWLINE][COLOR_RED]128x95 (Massive) ALPHA[ENDCOLOR][NEWLINE][COLOR_Civ6Yellow]This unsupported map size is still developmental. 2 out of 3 map seeds will fail. Restart if so.[ENDCOLOR]</Description>
     <Authors>blkbutterfly74</Authors>
     <SpecialThanks>Firaxis, p0kiehl</SpecialThanks>
     <AffectsSavedGames>false</AffectsSavedGames>
@@ -22,8 +17,8 @@ Two sizes:
     <AssemblyName>Scrambled South Pacific</AssemblyName>
     <RootNamespace>Scrambled South Pacific</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="UpdateConfig"><File>XML/Config.xml</File></UpdateDatabase><UpdateText id="UpdateText"><File>XML/SouthPacific_Text.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMaps"><File>Maps/SouthPacific.lua</File><File>Maps/SouthPacific_XP2.lua</File></ImportFiles><UpdateDatabase id="UpdateMapSizes"><File>SQL/SouthPacific.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
-    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="SouthPacificMapInUse"><MapInUse><SouthPacific>SouthPacific.lua</SouthPacific></MapInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMaps"><File>Maps/SouthPacific.lua</File><File>Maps/SouthPacific_XP2.lua</File></ImportFiles><UpdateDatabase id="UpdateMapSizes"><Criteria>SouthPacificMapInUse</Criteria><File>SQL/SouthPacific.sql</File></UpdateDatabase><UpdateDatabase id="UpdateMapSizesXP2"><Criteria>SouthPacificXP2MapInUse</Criteria><File>SQL/SouthPacific.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="SouthPacificMapInUse"><MapInUse>{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua</MapInUse></Criteria><Criteria id="SouthPacificXP2MapInUse"><MapInUse>{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific_XP2.lua</MapInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
     <AssociationData><![CDATA[<Associations>
   <Reference type="Mod" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
   <Reference type="Mod" title="Extended Great Barrier Reef" id="0d4f955c-7d7a-472c-9436-750d19339852" />
