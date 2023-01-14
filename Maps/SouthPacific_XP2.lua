@@ -423,8 +423,8 @@ end
 
 -- Input a Hash; Export width, height, and wrapX
 function GetMapInitData(MapSize)
-	local Width = 128;		-- was 199
-	local Height = 80;		-- was 120
+	local Width = GameInfo.Maps[MapSize].GridWidth;		-- was 199
+	local Height = GameInfo.Maps[MapSize].GridHeight;		-- was 120
 	local WrapX = false;
 	return {Width = Width, Height = Height, WrapX = WrapX,}
 end

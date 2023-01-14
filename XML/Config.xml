@@ -15,6 +15,20 @@
 		<Row Domain="Maps:Expansion2Maps" Value="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" Filter="difference"/>;
 	</DomainValueFilters>
 
+	<MapSizes>
+		<!-- 120 x 80 -->
+		<Row Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" MapSizeType="MAPSIZE_HUGE" Name="LOC_MAPSIZE_HUGE_NAME" Description="LOC_MAPSIZE_HUGE_DESCRIPTION" MinPlayers="2" MaxPlayers="4" DefaultPlayers="4" MinCityStates="0" MaxCityStates="6" DefaultCityStates="6" SortIndex="10"/>
+		<Row Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific_XP2.lua" MapSizeType="MAPSIZE_HUGE" Name="LOC_MAPSIZE_HUGE_NAME" Description="LOC_MAPSIZE_HUGE_DESCRIPTION" MinPlayers="2" MaxPlayers="4" DefaultPlayers="4" MinCityStates="0" MaxCityStates="6" DefaultCityStates="6" SortIndex="10"/>
+		<!-- 120 X 95 -->
+		<Row Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" MapSizeType="MAPSIZE_MASSIVE" Name="LOC_MAPSIZE_MASSIVE_NAME" Description="LOC_MAPSIZE_MASSIVE_DESCRIPTION" MinPlayers="2" MaxPlayers="6" DefaultPlayers="6" MinCityStates="0" MaxCityStates="9" DefaultCityStates="9" SortIndex="10"/>
+		<Row Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific_XP2.lua" MapSizeType="MAPSIZE_MASSIVE" Name="LOC_MAPSIZE_MASSIVE_NAME" Description="LOC_MAPSIZE_MASSIVE_DESCRIPTION" MinPlayers="2" MaxPlayers="6" DefaultPlayers="6" MinCityStates="0" MaxCityStates="9" DefaultCityStates="9" SortIndex="10"/>
+	</MapSizes>
+	
+	<MapDomainOverrides>
+		<Row Map="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" ParameterId="MapSize" Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua"/>
+		<Row Map="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific_XP2.lua" ParameterId="MapSize" Domain="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific_XP2.lua"/>
+	</MapDomainOverrides>
+
 	<!-- advanced settings -->
 	<Parameters>
 		<Row Key1="Map" Key2="{25E3EC95-AC88-4B9D-A9AB-63AAC21A0F67}Maps/SouthPacific.lua" ParameterId="WorldAge" Name="LOC_MAP_WORLD_AGE_NAME" Description="LOC_MAP_WORLD_AGE_DESCRIPTION" Domain="WorldAge" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="world_age" GroupId="MapOptions" Hash="0" SortIndex="230"/>

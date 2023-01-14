@@ -4,13 +4,24 @@
 <!-- DateCreated: 2/18/2018 12:59:36 PM -->
 <GameData>
 	<FrontEndText>
-
 		<!-- Texts for Maps -->
 		<Row Tag="LOC_SOUTH_PACIFIC_MAP_NAME">
 			<Text>Scrambled South Pacific</Text>
 		</Row>
 		<Row Tag="LOC_SOUTH_PACIFIC_MAP_DESCRIPTION">
-			<Text>An internally randomized map of the South Pacific. (128x80)</Text>
+			<Text>An internally randomized map of the South Pacific.</Text>
 		</Row>
 	</FrontEndText>
+
+	<LocalizedText>
+		<Replace Tag="LOC_MAPSIZE_HUGE_DESCRIPTION" Language="en_US">
+			<Text>A huge 128x80 water map limited to 4 players</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_MASSIVE_NAME" Language="en_US">
+			<Text>Massive</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_MASSIVE_DESCRIPTION" Language="en_US">
+			<Text>A massive 128x95 water map limited to 6 players. [COLOR_RED](ALPHA)[ENDCOLOR]</Text>
+		</Replace>
+	</LocalizedText>
 </GameData>
