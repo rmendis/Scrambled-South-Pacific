@@ -29,4 +29,4 @@ INSERT INTO Maps_XP2
 SELECT	'MAPSIZE_MASSIVE',	1000000,				5,						5 WHERE EXISTS (SELECT * FROM Technologies WHERE TechnologyType='TECH_SEASTEADS');
 
 -- south pacific huge
-Update Maps_XP2 Set CO2For1DegreeTempRise = 1000000 where MapSizeType = 'MAPSIZE_HUGE';
+Update Maps_XP2 Set CO2For1DegreeTempRise = 500000 where MapSizeType = 'MAPSIZE_HUGE';
