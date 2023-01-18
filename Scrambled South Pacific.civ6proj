@@ -10,7 +10,7 @@
     <Description>An internally randomized map of the South Pacific Ocean.[NEWLINE]Two sizes: 128x80 (Huge)[NEWLINE][COLOR_RED]128x95 (Massive) ALPHA[ENDCOLOR][NEWLINE][COLOR_Civ6Yellow]This unsupported map size is still developmental. 2 out of 3 map seeds will fail. Restart if so.[ENDCOLOR]</Description>
     <Authors>blkbutterfly74</Authors>
     <SpecialThanks>Firaxis, p0kiehl</SpecialThanks>
-    <AffectsSavedGames>false</AffectsSavedGames>
+    <AffectsSavedGames>true</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>

@@ -21,12 +21,17 @@ Update Maps SET DefaultPlayers = 6, NumNaturalWonders = 4, GridWidth = 128, Grid
 INSERT INTO Map_GreatPersonClasses
 		(MapSizeType,			GreatPersonClassType,			MaxWorldInstances)
 VALUES	('MAPSIZE_MASSIVE',		'GREAT_PERSON_CLASS_PROPHET',	4);
+
+-- south pacific huge
+UPDATE Map_GreatPersonClasses Set MaxWorldInstances = 3 WHERE GreatPersonClassType = 'GREAT_PERSON_CLASS_PROPHET' and MapSizeType = 'MAPSIZE_HUGE';
+
 -------------------------------------	
 -- Maps_XP2
 -------------------------------------	
 INSERT INTO Maps_XP2
-		(MapSizeType,		CO2For1DegreeTempRise,	DesertPlotCountToLabel,	MountainPlotCountToLabel)
-SELECT	'MAPSIZE_MASSIVE',	1000000,				5,						5 WHERE EXISTS (SELECT * FROM Technologies WHERE TechnologyType='TECH_SEASTEADS');
+		(MapSizeType, CO2For1DegreeTempRise, DesertPlotCountToLabel, MountainPlotCountToLabel, SeaPlotCountToLabel, LakePlotCountToLabel, OceanPlotCountToLabel)
+VALUES	('MAPSIZE_MASSIVE',	1000000, 5, 5, 6, 1, 12);
 
 -- south pacific huge
-Update Maps_XP2 Set CO2For1DegreeTempRise = 500000 where MapSizeType = 'MAPSIZE_HUGE';
+REPLACE INTO Maps_XP2(MapSizeType, CO2For1DegreeTempRise)
+VALUES('MAPSIZE_HUGE', 500000);
